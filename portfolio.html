@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        header { background: #007BFF; color: white; text-align: center; padding: 2rem; }
+        nav { background: #0056b3; padding: 1rem; }
+        nav ul { list-style: none; display: flex; justify-content: center; }
+        nav li { margin: 0 1rem; }
+        nav a { color: white; text-decoration: none; }
+        section { padding: 3rem 2rem; max-width: 1200px; margin: auto; }
+        #about img { width: 200px; height: 200px; border-radius: 50%; float: left; margin-right: 2rem; }
+        .skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .project-card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; }
+        .resume-link { display: inline-block; background: #28a745; color: white; padding: 0.5rem 1rem; text-decoration: none; border-radius: 4px; }
+        #contact form { max-width: 500px; }
+        input, textarea { width: 100%; padding: 0.5rem; margin: 0.5rem 0; }
+        footer { background: #333; color: white; text-align: center; padding: 1rem; }
+        @media (max-width: 768px) { nav ul { flex-direction: column; } #about img { float: none; display: block; margin: 0 auto 1rem; } }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Name</h1>
+        <p>CS Student | Java Developer | Full-Stack Aspirant</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <img src="your-photo.jpg" alt="Your Photo">
+        <h2>About Me</h2>
+        <p>Computer science student passionate about backend development with Java and DSA. Built web projects during internship including landing pages, calculators, e-commerce sites, and project tools. Also skilled in video editing with DaVinci Resolve and Notion templates.</p>[memory:7][conversation_history:8]
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div><h3>Programming</h3><p>Java, JavaScript, HTML/CSS</p></div>
+            <div><h3>Web Dev</h3><p>Landing pages, E-commerce</p></div>
+            <div><h3>Other</h3><p>DSA, Video Editing, Notion</p></div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>LSM Speech Recognition</h3>
+                <p>Implemented model and ran Kaggle experiments.</p>
+                <img src="speech-demo.jpg" alt="Demo" style="width:100%; height:150px; object-fit:cover;">
+            </div>
+            <div class="project-card">
+                <h3>E-commerce Site</h3>
+                <p>Full web app from internship.</p>
+                <img src="ecom-demo.jpg" alt="Demo" style="width:100%; height:150px; object-fit:cover;">
+            </div>
+        </div>[memory:2][memory:7]
+    </section>
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" download class="resume-link">Download Resume</a>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: your.email@example.com | Phone: +91-XXXXXXXXXX | <a href="https://github.com/yourusername">GitHub</a></p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
